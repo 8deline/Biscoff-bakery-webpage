@@ -6,6 +6,10 @@ class Bakedgoods extends React.Component{
         this.state = {bakedgoods: ""}
     }
 
+    componentDidMount(){
+        
+    }
+
     render(){
         if (this.state.bakedgoods ===""){
             return (

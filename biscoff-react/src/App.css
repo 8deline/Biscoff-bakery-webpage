@@ -15,7 +15,7 @@
 
 .homepage-background {
   background: url("homepage-cover.jpg");
-  height: 540px;
+  height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -39,6 +39,23 @@
   position: relative;
   top: 20px;
   left: 50px;
+}
+
+.about-img {
+  width: 40vw;
+}
+.about-para {
+  padding: 5px;
+  margin-top: 10%;
+}
+.about {
+  text-align: center;
+  font-weight: 300;
+  color: grey;
+}
+
+.about-para p {
+  color: grey;
 }
 
 .footer {

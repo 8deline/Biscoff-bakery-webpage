@@ -27,7 +27,7 @@ class Navbar extends React.Component{
                             <span className="marker">|</span>
                             <NavBarItems link="#" item = "Baked goods" />
                             <span className="marker">|</span>
-                            <NavBarItems link="#" item = "About" />
+                            <NavBarItems link="/bakedgoods/about" item = "About" />
                             <span className="marker">|</span>
                             <NavBarItems link="#" item = "Contact" />
         

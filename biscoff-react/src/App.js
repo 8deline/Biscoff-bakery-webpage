@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Bakedgoods from './components/bakedgoods'
 import NavBarItems from './components/NavBarItems'
+import About from './components/about'
 
 class App extends React.Component{
   constructor(prop) {
@@ -17,6 +18,9 @@ class App extends React.Component{
     return (
       <Router>
         <Switch>
+        <Route path ="/bakedgoods/about">
+            <About />
+          </Route>
           <Route path="/bakedgoods">
             <Bakedgoods />
           </Route>
