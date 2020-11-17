@@ -58,6 +58,19 @@
   color: grey;
 }
 
+.input {
+  background-color: #f9f9f9;
+  opacity: 1;
+  border: none;
+}
+
+.btn-send {
+  background-color: #eaeaea;
+  border-radius: 5px;
+  position: relative;
+  margin-left: 45%;
+}
+
 .footer {
   text-align: center;
 }

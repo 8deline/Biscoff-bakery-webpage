@@ -23,13 +23,13 @@ class Navbar extends React.Component{
                             {/* <li class="nav-item active">
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             </li> */}
-                            <NavBarItems link="#" item="Home" />
+                            <NavBarItems link="/" item="Home" />
                             <span className="marker">|</span>
-                            <NavBarItems link="#" item = "Baked goods" />
+                            <NavBarItems link="/bakedgoods" item = "Baked goods" />
                             <span className="marker">|</span>
                             <NavBarItems link="/bakedgoods/about" item = "About" />
                             <span className="marker">|</span>
-                            <NavBarItems link="#" item = "Contact" />
+                            <NavBarItems link="/bakedgoods/contact" item = "Contact" />
         
                         </ul>
                     </div>

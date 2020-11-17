@@ -6,6 +6,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Bakedgoods from './components/bakedgoods'
+import Contact from './components/contact'
 import NavBarItems from './components/NavBarItems'
 import About from './components/about'
 
@@ -20,6 +21,9 @@ class App extends React.Component{
         <Switch>
         <Route path ="/bakedgoods/about">
             <About />
+          </Route>
+          <Route path ="/bakedgoods/contact">
+            <Contact />
           </Route>
           <Route path="/bakedgoods">
             <Bakedgoods />
