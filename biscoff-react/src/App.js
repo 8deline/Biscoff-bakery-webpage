@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 
 import './App.css';
@@ -7,9 +7,9 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Bakedgoods from './components/bakedgoods'
 import Contact from './components/contact'
-import NavBarItems from './components/NavBarItems'
-import About from './components/about'
 
+import About from './components/about'
+import Showbakedgood from './components/showbakedgoods'
 class App extends React.Component{
   constructor(prop) {
     super(prop)
@@ -19,15 +19,20 @@ class App extends React.Component{
     return (
       <Router>
         <Switch>
+        
         <Route path ="/bakedgoods/about">
             <About />
           </Route>
           <Route path ="/bakedgoods/contact">
             <Contact />
           </Route>
+          
+
+          
           <Route path="/bakedgoods">
             <Bakedgoods />
           </Route>
+          <Route path="/bakedgoods/:slug" component={Showbakedgood} />
           <Route path = "/">
           <div>
       <Navbar />
@@ -40,6 +45,7 @@ class App extends React.Component{
       <Footer />
     </div>  
           </Route>
+         
         </Switch>
        
       </Router>

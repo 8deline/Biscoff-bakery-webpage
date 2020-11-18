@@ -44,6 +44,21 @@
 .about-img {
   width: 40vw;
 }
+
+.baked-good-main {
+  margin-top: 50px;
+}
+
+.bakedgood {
+  height: 40vh;
+  margin: 30px;
+}
+
+.bakedgood-div {
+  height: 90vh;
+  display: flex-wrap;
+}
+
 .about-para {
   padding: 5px;
   margin-top: 10%;
@@ -73,6 +88,9 @@
 
 .footer {
   text-align: center;
+}
+.footer-size {
+  height: 10vh;
 }
 
 /* .bread-logo {

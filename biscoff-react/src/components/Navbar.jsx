@@ -10,7 +10,7 @@ class Navbar extends React.Component{
         return (
             <div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a className="navbar-brand" href="#">
+                    <a className="navbar-brand" href="/">
                         <img className="bread-logo" src="/icon-biscoff-bakery.png" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy"/>
                         Biscoff bakery
                     </a>
