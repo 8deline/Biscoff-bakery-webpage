@@ -1,13 +1,12 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
+
 import '../App.css'
 
  class About extends React.Component{
      render(){
          return(
             <div>
-            <Navbar />
+            
             <div className="container">
             <div className="row">
                  <div className="col-6">
@@ -24,7 +23,7 @@ import '../App.css'
              </div>
             </div>
              
-            <Footer />     
+             
          </div>
          )
          

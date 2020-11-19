@@ -1,0 +1,21 @@
+.page {
+  min-height: calc(100vh -13px - 50px);
+}
+
+.product {
+  height: 90vh;
+  margin: 20px;
+  display: flex;
+
+  img {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .column {
+    h1 {
+      font-size: 36px;
+      color: #221f1f;
+    }
+  }
+}

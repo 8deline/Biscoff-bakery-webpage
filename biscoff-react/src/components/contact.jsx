@@ -1,13 +1,11 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
 import '../App.css'
 
 class Contact extends React.Component {
     render(){
         return(
            <div>
-           <Navbar />
+           
            <div className="container">
            <div className="row">
                 <div className="col-6">
@@ -41,7 +39,7 @@ class Contact extends React.Component {
             </div>
            </div>
             
-           <Footer />     
+              
         </div>
         )
         

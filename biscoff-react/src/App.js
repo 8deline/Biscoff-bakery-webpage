@@ -18,6 +18,7 @@ class App extends React.Component{
   render() {
     return (
       <Router>
+          <Navbar />
         <Switch>
         
         <Route path ="/bakedgoods/about">
@@ -28,26 +29,26 @@ class App extends React.Component{
           </Route>
           
 
-          
+          <Route path="/bakedgoods/:slug" component={Showbakedgood} />
           <Route path="/bakedgoods">
             <Bakedgoods />
           </Route>
-          <Route path="/bakedgoods/:slug" component={Showbakedgood} />
+          
           <Route path = "/">
           <div>
-      <Navbar />
+    
       <div className="homepage-background">
         <div className="homepage-words">
         <h1 className="homepage-words">Artisanal Breads & Cakes Freshly Baked Everyday</h1>
         </div>
         <Link to="/bakedgoods" className="btn btn-light fresh-bakes">See our fresh bakes</Link>
       </div>
-      <Footer />
+      
     </div>  
           </Route>
          
         </Switch>
-       
+        <Footer />
       </Router>
     
       

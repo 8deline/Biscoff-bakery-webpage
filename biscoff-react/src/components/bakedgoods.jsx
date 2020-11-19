@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import Navbar from './Navbar'
-import Footer from './Footer'   
+   
 import {Link} from 'react-router-dom'
 import '../App.css'
 
@@ -22,7 +21,7 @@ class Bakedgoods extends React.Component{
     render(){
         return(
             <div>
-                <Navbar />
+                
                 <div className="container baked-good-main">
                 <h1 className="about">Baked goods</h1>
                 <div className="row">
@@ -30,13 +29,19 @@ class Bakedgoods extends React.Component{
                 {this.state.bakedgoods===null ? '': (this.state.bakedgoods.map(bakedgood=>{
                     return( 
                        <div className="col-4 bakedgood-div">
-                           <div>
-                           <Link to={"/bakedgoods/"+ bakedgood.slug}>
+                           <div className="bakedgoods-list">
+                             <figure>
+                             <Link to={"/bakedgoods/"+ bakedgood.slug}>
                         <img className="bakedgood"  src={bakedgood.image}></img></Link>
-                           </div>
-                            <div>
-                            <p> {bakedgood.name}</p>
+                           
+                            
+                         <figcaption>
+                         <p> {bakedgood.name}</p>
                         <p> {bakedgood.price.$numberDecimal}</p>
+                             </figcaption>         
+                                 </figure>  
+                           
+                            
                            </div>
                            
                         </div>
@@ -50,7 +55,7 @@ class Bakedgoods extends React.Component{
                 </div>
                 
             </div>
-            <Footer />
+            
             </div>
             
             
