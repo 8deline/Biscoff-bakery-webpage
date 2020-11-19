@@ -28,6 +28,7 @@ class Contact extends React.Component {
          })
          .catch(err=>{
              console.log(err)
+             console.log('test')
          })   
         
         
