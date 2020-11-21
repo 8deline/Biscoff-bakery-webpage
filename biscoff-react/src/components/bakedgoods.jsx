@@ -20,7 +20,7 @@ class Bakedgoods extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className="page">
                 
                 <div className="container baked-good-main">
                 <h1 className="about">Baked goods</h1>
